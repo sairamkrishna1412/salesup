@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1024px){
+    .search-full>span{
+        position: absolute;
+        top: 12px;
+        margin-left: 12px;
+    }
+    #search-box{
+        /* width: 650px; */
+        /* padding-left: 45px;
+        padding-right: 15px;
+        border: none; */
+    }
+    .user-and-notification{
+        margin-top: 5px;
+    }
+    .main-carousel{
+        width: 100%;
+    }
+}
