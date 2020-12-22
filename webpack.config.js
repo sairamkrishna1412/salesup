@@ -1,5 +1,7 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports={
+    mode : "development",
     entry : [
         '/src/js/index.js'
     ],
@@ -7,6 +9,12 @@ module.exports={
         path : path.resolve(__dirname,'dist'),
         filename : 'js/bundle.js'
     },
-    mode : "development",
-    devServer : "./dist"
+    devServer : {contentBase: path.join(__dirname, 'dist')},
+    //always specify contentbase field for devserver
+    plugins : [
+        new HtmlWebpackPlugin({
+            filename:'index.html',
+            template:'./src/index.html'
+        })
+    ]
 };
