@@ -5,6 +5,9 @@ module.exports={
     entry : [
         '/src/js/index.js'
     ],
+    // resolve: {
+    //     extensions: [".wasm", ".ts", ".tsx", ".mjs", ".cjs", ".js", ".json"],
+    // },
     output : {
         path : path.resolve(__dirname,'dist'),
         filename : 'js/bundle.js'
